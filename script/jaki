@@ -4,8 +4,8 @@
 # Note: if you are relocating this script, ensure that these two variables point #
 # to the appropriate locations for the couchapp template and Jaki library        #
 ##################################################################################
-TEMPLATE_DIR=couchapp-template
-JAKI_DIR=src/jaki
+TEMPLATE_DIR=~/projects/jaki/couchapp-template
+JAKI_DIR=~/projects/jaki/src/jaki
 
 # If you have a standard .gitignore, specify it here, otherwise ignore
 GITIGNORE=~/.templates/.gitignore
@@ -70,7 +70,7 @@ echo "(ns $APP.app
 #
 # HTML boilerplate
 #
-sed -i \
+sed -i '' \
     -e "s/<!-- Title -->/$APP/" \
     -e "s/<!-- Start -->/$APP.app.start()/" \
     $APP/app/_attachments/index.html
